@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>跨frame读取实验</title>
+</head>
+<body>
+<iframe src="www.baidu.com" width="600" height="900" name="iframe1"></iframe><br>
+<input type="button" onclick="go()" value="密码：">
+<script>
+	function go() {	
+		try{
+			var x=iframe1.document.form1.passwd.value;
+			document.getElementById('out').innerHTML=x;
+		}catch(e){
+			alert(e.message);
+		}
+		// body...
+	}
+</script>
+<span id="out"></span>
+	
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My first demo</title>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+	<script type="text/javascript" src="test.js">
+</head>
+<body id="body" class="">
+	<h1>File API Demo</h1> 
+	<p> 
+		<!-- 用于文件上传的表单元素 --> 
+		<form name="demoForm" id="demoForm" method="post" enctype="multipart/form-data" action="javascript: uploadAndSubmit();"> 
+			<p>Upload File: <input type="file" name="file" /></p> 
+			<p><input type="submit" value="Submit" /></p> 
+		</form> 
+		<div>Progessing (in Bytes): <span id="bytesRead"> </span> / <span id="bytesTotal"></span> </div> 
+	</p> 
+</body>
+</html>
